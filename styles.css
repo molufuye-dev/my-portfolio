@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'Public Sans';
+    src: url('fonts/PublicSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Public Sans,Sans;
+    color: white;
+}
+nav{
+    height: min(10vh,40px);
+    width: 100%;
+    background-color: #45422f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo-container{
+    height: 90%;
+    margin-left: min(35px,5%);
+}
+nav ul{
+    height: 100%;
+    width: max(500px,50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: clamp(1rem,1.2vw,1.5rem);
+}
+.section{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#introduction{
+    background-image: url(images/leaf-design.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem 0;
+}
+#intro-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+#pic-circle{
+    height: 350px;
+    width: 350px;
+    border: #45422f solid 4px;
+    border-radius: 50%;
+}
+h1{
+    font-size: clamp(2rem,4vw,4rem);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+#intro-desc{
+    font-size: clamp(1.5rem,2.8vw,3.5rem);
+}
+h3{
+    font-size: 1.4rem;
+    margin: 0;
+}
+p{
+    font-size: 1.1rem;
+}
+.caption-heading{
+    font-size: 1.8rem;
+}
+#intro-container h2{
+    margin: 0;
+    padding: 0;
+}
+#about{
+    background-image: url(images/leaf-design\(filter\).png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem 0;
+}
+#about-card{
+    background-color: #45422f;
+    width: 90%;
+    max-width: 900px;
+    max-height: 600px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+.section-heading{
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+}
+#about-heading{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#about-text{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#about-seperator{
+    width: 80%;
+}
+.about-list{
+    list-style-type:decimal;
+}
+.about-list-item{
+    font-size: 1.4rem;
+    padding-top: 2rem;
+}
+#portfolio{
+    position: relative;
+}
+#portfolio-background{
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;    
+}
+#portfolio-heading{
+    z-index: 2;
+    margin-top: 3rem;
+    position: relative;
+}
+#green-background , #brown-background{
+    position: absolute;
+    min-height: 100vh;
+    width: 50%;
+}
+#green-background{
+    background-color: #77af2f; 
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#brown-background{
+    background-color: #45422f;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#green-background img{
+    max-width: 80%;
+    height: auto;
+}
+#projects-container{
+    display: grid;
+    width: 30rem;
+    height: 30rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    border-radius: 2px;
+    
+}
+.project{
+    background-color: gray;
+    padding: 0.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;  
+}
+.project-name{
+    text-align: center;
+}
+.project-seperator{
+    width: 100%;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+
+#footer-container{
+    height: 20vh;
+    display: flex;
+    width: 100%;
+    background-color: gray;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+    
