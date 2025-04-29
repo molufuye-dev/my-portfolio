@@ -4,6 +4,9 @@
     font-weight: normal;
     font-style: normal;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -104,7 +107,7 @@ h3{
     object-position: center;
 }
 .me.lit-up {
-    filter: grayscale(0%);
+    filter: grayscale(6%);
     transition: filter 0.5s ease-in-out;
 }
 .lrg-caption{
