@@ -26,7 +26,7 @@
     </nav>
     <section  class=" introduction section">
         <div class="container intro-container">
-            <div class="large-potrait-pic circle"></div>
+            <div class="large-potrait-pic circle"><img class="me" src="images/me.jpg" alt="Olufuye Michael"></div>
             <h1 class="center-txt">Olufuye Michael Jesudunni</h1>
             <h2 class="lrg-caption">I am a web developer</h2>
         </div>
@@ -56,7 +56,7 @@
                 <div class="project">
                     <h3 class="center-txt">Platformer Game</h3>
                     <hr>
-                    <p class="">A platformer obby game I made using lua.</p>
+                    <p class="center-txt">A platformer obby game I made using the roblox game engine and lua.</p>
                     <div class="spacer"></div>
                     <a class="" href="https://www.roblox.com/games/7515319535/Chill-obby-pre-alpha" target="_blank" rel="noopener noreferrer">
                     <svg width="2rem" height="2rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" class="link" >
@@ -70,9 +70,7 @@
                     </svg>
                     </a>
                 </div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
+            
             </div>
         </div>
         </div>
@@ -86,5 +84,10 @@
         </div>
     </footer>
 </div>
+<script>
+    document.querySelector('.me').addEventListener('mouseenter', function() {
+        this.classList.add('lit-up');
+    });
+    </script>
 </body>
 </html>
