@@ -262,7 +262,7 @@ footer{
         font-size: 15px;
     }
     .portfolio-background{
-        grid-template-rows: auto 0.7fr 1fr;
+        grid-template-rows: auto 0.5fr 1fr;
         grid-template-columns: 1fr;
         min-height: 150vh;
         
@@ -274,6 +274,10 @@ footer{
     .brown-background{
     grid-column: 1 / 2;
      grid-row: 3 / 4;    
+    }
+    nav ul li a:hover{
+        color: unset;
+        transition: unset;
     }
 }
 @media (max-width:400px){
