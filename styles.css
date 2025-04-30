@@ -79,7 +79,7 @@ h3{
 .introduction{
     display: grid;
     place-items: center;
-    background-image: url(images/leaf-design.png);
+    background-image: url(images/geometric-green.png);
     background-position: center;
     background-size: cover;
     padding: 2rem 0;
@@ -125,7 +125,7 @@ h3{
     padding: 0;
 }
 .about{
-    background-image: url(images/leaf-design\(filter\).png);
+    background-image: url(images/geometric-light-green.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -172,7 +172,9 @@ h3{
 .green-background {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: #77af2f;
+    background-image: url(images/geometric-green.png);
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,6 +182,7 @@ h3{
     z-index: 1;
     padding: 3rem 1rem 1rem 1rem;
 }
+
 
 .brown-background {
     grid-column: 2 / 3;
@@ -201,10 +204,9 @@ h3{
     z-index: 2;
     margin: 0;
     padding: 2rem 0 1.5rem 0;
-    /* Optional: add background or text-shadow for readability */
 }
 .green-background img{
-    max-width: 80%;
+    max-width: 65%;
     height: auto;
 }
 .projects-container{
@@ -233,26 +235,27 @@ h3{
     flex: 1 1 auto;
 }
 footer{
-    height: 8vh;
+    height: 10vh;
     display: flex;
     width: 100%;
     background-color: gray;
     justify-content: end;
     align-items: center;
 }
-.footer-container{
-    width: 40%;
+.contact-container{
+    width: min(70%,500px);
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 .footer-link{
     height: max(2rem,50%);
 }
 .connect{
     margin-right: auto;
-    margin-left: max(2.4rem,5%);
+    margin-left: max(0.5rem,5%);
 }
 .center-txt{
     text-align: center;
@@ -262,25 +265,40 @@ footer{
         font-size: 15px;
     }
     .portfolio-background{
-        grid-template-rows: auto 0.5fr 1fr;
+        grid-template-rows: auto 0.4fr 0.6fr;
         grid-template-columns: 1fr;
-        min-height: 150vh;
-        
+        min-height: 100vh;
+    }
+    .portfolio-heading{
+        padding: 0;
+        padding-top: 1rem;
     }
     .green-background{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     }
+    .green-background img{
+        max-height: 200px;
+    }
     .brown-background{
     grid-column: 1 / 2;
-     grid-row: 3 / 4;    
+    grid-row: 3 / 4;
+    }
+    .projects-container{
+        display: grid;
+        width: 90%;
+        height: auto;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        gap: 5%;
+        place-items: center;
     }
     nav ul li a:hover{
         color: unset;
         transition: unset;
     }
 }
-@media (max-width:400px){
+@media (max-width:550px){
     html{
         font-size: 13px;
     }
