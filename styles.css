@@ -25,9 +25,12 @@ nav{
     top: 0;
     z-index: 100;
 }
-#logo-container{
+nav > a{
     height: 80%;
     margin-left: min(35px,5%);
+} 
+#logo-container{
+    height: 100%;
 }
 nav ul{
     height: 100%;
